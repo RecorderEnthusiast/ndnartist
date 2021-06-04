@@ -3,15 +3,9 @@ body{
 	margin: 0;
 	padding: 0;
 	color: #222;
-	background-color: #333;
+	background-color: #222;
 	font-size: 100%;
 	line-height: normal;
-}
-  .panel h1{
-	  color: #120
-	  font-size: 1.1em;
-	  text-align: justify;
-  }
   img {
   display: block;
   margin-left: auto;
