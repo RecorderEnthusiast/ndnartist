@@ -7,9 +7,9 @@ body {
 	font-size: 100%;
 	line-height: normal;
 }
-  img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 40%;
-  }
+img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 40%;
+}
