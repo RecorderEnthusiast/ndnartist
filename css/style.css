@@ -1,0 +1,51 @@
+body{
+    font: 14pt/1.5 'Kaushan Script', cursive;
+    background: black;
+    padding: 0;
+    margin: 0;
+    height: 80%;
+}
+#logo{
+    padding: 10px 10px 0;
+    max-width: 80%;
+}
+#banner{
+    width: 100%;
+    max-height: 650px;
+    object-fit: cover;
+    object-position: 50% 0%;
+    margin-top: -15px;
+}
+nav{
+    list-style: none;
+    float: right;
+    margin: 0;
+    padding: 10px;
+}
+nav a{
+    text-decoration: none;
+    font-size: 32pt;
+    font-weight: 100;
+    padding-right: 10px;
+    padding-left: 10px;
+    color: #ccc;
+}
+nav a:hover,a:active,a:focus{
+    color: white;
+}
+
+address {
+	list-style: none;
+    float: right;
+    margin: 0;
+    padding: 10px;
+	padding-top: 70px;
+}
+
+address a {
+	text-decoration: none;
+	color: #ccc;
+	font-size: 28pt; 
+}
+	
+	
