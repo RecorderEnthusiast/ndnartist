@@ -8,6 +8,9 @@ body{
 #logo{
     padding: 10px 10px 0;
     max-width: 80%;
+	position: relative;
+	top: 0;
+	left: 0;
 }
 #banner{
     width: 100%;
@@ -23,8 +26,6 @@ body{
 	width: 400px;
 	height: auto;
 }
-
-	
 nav{
     list-style: none;
     float: right;
@@ -61,9 +62,158 @@ p {
 	color: #ccc;
 	font: 12pt/1.5 'Arial', sans-serif;
 	float: center;
-
+	margin: 10px;
+}
 address a:hover,a:active,a:focus {
 	color: white;
 }
 	
-	
+div.bio {
+	display: inline-block;
+	width: 750px;
+	background-color: #484848;
+	border-radius: 8px;
+	box-shadow: 0 0 0 2px #fff;
+	margin: 10px;
+    }
+
+.one a:link {
+	color: aquamarine;
+}
+
+.one a:visited {
+	color: aquamarine;
+}
+/* PORTFOLIO */
+/* @TODO: figure out how to use css grids and remove masonry */
+.grid {
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+.grid-item {
+    width : 292px;
+    text-align: center;
+    font-size: 22px;
+    padding-top: 10px;
+    color: #555;
+    font-weight: bold;
+    transition: 0.3s;
+    margin: 2px;
+}
+
+.grid-item:hover {
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+/* The Modal (background) */
+.modal {
+  width: 100%; height: 100%; position: fixed; /*
+  position: absolute ; 
+    object-fit: cover;
+
+  padding-top: 100px; 
+
+  overflow: hidden; 
+  padding : 10%;
+   */
+
+  overflow: auto; /* Enable scroll if needed */
+
+  left: 0;
+  top: 0;
+
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (Image) */
+.modal-content {
+    padding-top : 30px;
+    margin: auto;
+    width: auto;
+    height :  90vh;
+    display: block;
+}
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation - Zoom in the Modal */
+.modal-content, #caption {
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+  from {transform:scale(0)}
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
+}
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
