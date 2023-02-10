@@ -7,6 +7,7 @@ var modalImg;
 var captionText;
 
 var span; 
+var selected_image;
 
 window.onload = function() {
     //showSlides(slideIndex);
@@ -42,19 +43,18 @@ window.onload = function() {
 function Update_Modal(selected_image_index) {
 
     console.log("update_modal");
-    if (selected_image_index >= gallery_images.length) {
-        selected_image_index = 0;
-    }
-    else if (selected_image_index < 0) {
-        selected_image_index = gallery_images.length-1;
-    }
-
+if (selected_image_index >= gallery_images.length) {
+    selected_image_index = 0;
+} else if (selected_image_index < 0) {
+    selected_image_index = gallery_images.length-1;
+}
     //@NOTE: the $(...) is special jquery syntax without it you won't be able to call .attr();
-    let selected_image = $(gallery_images[selected_image_index]);
-
+    if (selected_image_index === undefined || selected_image_index >= gallery_images.length) {
+  return;
+}
+	let selected_image = $(gallery_images[selected_image_index]);
     modal.style.display = "block";
     modalImg.src = selected_image.attr('src');
     captionText.innerHTML = selected_image.attr('alt');
-
     gallery_image_index = selected_image_index;
 }
