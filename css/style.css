@@ -67,14 +67,16 @@ p {
 address a:hover,a:active,a:focus {
 	color: white;
 }
-	
+
+
+
+/* BIO  */
 div.bio {
 	display: inline-block;
-	width: 750px;
 	background-color: #484848;
 	border-radius: 8px;
 	box-shadow: 0 0 0 2px #fff;
-	margin: 10px;
+	margin: 20px;
     }
 
 .one a:link {
