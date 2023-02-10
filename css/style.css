@@ -17,7 +17,7 @@ body{
     max-height: 650px;
     object-fit: cover;
     object-position: 50% 0%;
-    margin-top: -13.5px;
+    margin-top: -15px;
 }
 
 #prof{
@@ -30,7 +30,7 @@ nav{
     list-style: none;
     float: right;
     margin: 0;
-    padding-right: 10px;
+    padding: 10px;
 }
 nav a{
     text-decoration: none;
@@ -48,7 +48,7 @@ address {
 	list-style: none;
     float: right;
     margin: 0;
-    padding-right: 10px;
+    padding: 10px;
 	padding-top: 70px;
 }
 
@@ -87,8 +87,21 @@ div.bio {
 /* PORTFOLIO */
 /* @TODO: figure out how to use css grids and remove masonry */
 .grid {
-    max-width: 1200px;
-    margin: 20px auto;
+ display : grid;
+    grid-template-columns: repeat(4, auto);
+    grid-gap : 2em;
+    padding : 2em;
+
+    place-items : center;
+
+    width : 70%;
+    height : fit-content;
+
+    margin : 0 auto;
+    background-color: #25294a;
+
+    text-align : center;
+}
 }
 
 .grid-item {
@@ -99,16 +112,25 @@ div.bio {
     color: #555;
     font-weight: bold;
     transition: 0.3s;
-    margin-left: 45px;
-	margin-right: 45px;
-	margin-bottom: 20px;
+    margin: 2px;
 }
 
 .grid-item:hover {
     cursor: pointer;
     opacity: 0.7;
 }
+.thumbnail-container {
+    width : 100%;
+    height : 80%;
+    display : grid;
+    place-items : center;
+    margin-bottom : 20px;
+}
 
+.thumbnail-container img {
+    width : 100%;
+    box-shadow : 10px 10px 30px rgba(0,0,0,0.5);
+}
 /* The Modal (background) */
 .modal {
   width: 100%; height: 100%; position: fixed; /*
