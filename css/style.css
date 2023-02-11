@@ -95,12 +95,11 @@ div.bio {
 .biopic img{
   width: 100%;
   max-width: 500px;
-  position: absolute;
-  top:200px; left:0; right:0; bottom:0;
-  margin:auto;
+  display: block;
+  margin: auto;
   border: 5px solid #3c161c;
   border-radius: 2px;
-}
+
 /* PORTFOLIO */
 /* @TODO: figure out how to use css grids and remove masonry */
 .grid {
@@ -153,9 +152,7 @@ div.bio {
   width: 100%; height: 100%; position: fixed; /*
   position: absolute ; 
     object-fit: cover;
-
   padding-top: 100px; 
-
   overflow: hidden; 
   padding : 10%;
    */
