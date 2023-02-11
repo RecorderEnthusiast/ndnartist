@@ -88,21 +88,39 @@ div.bio {
 .one a:visited {
 	color: #bc161c;
 }
-.biopic {
-  width: 100%;
-  position: relative;
-}
-.biopic img{
+
+.bio img{
   width: 100%;
   max-width: 500px;
+  height: auto;
   display: block;
-  margin: auto;
+  margin: 0 auto;
   border: 5px solid #3c161c;
   border-radius: 2px;
 }
 
 /* PORTFOLIO */
 /* @TODO: figure out how to use css grids and remove masonry */
+/* 3D Embed */
+.vt {  
+  width : 100%;
+  display: flex;
+  justify-content: center;
+  height: auto;
+  flex-direction: column;
+  }
+ 
+ .vtcap {
+	 text-align: center;
+	 margin-top: 5px;
+ }
+#scroll-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  cursor: pointer;
+}
+
 .grid {
  display : grid;
     grid-template-columns: repeat(4, auto);
@@ -118,7 +136,6 @@ div.bio {
     background-color: #25294a;
 
     text-align : center;
-}
 }
 
 .grid-item {
