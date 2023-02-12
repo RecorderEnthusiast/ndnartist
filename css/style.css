@@ -112,8 +112,12 @@ div.bio {
  
  .vtcap {
 	 text-align: center;
-	 margin-top: 5px;
+	 margin-top: 1px;
+	 margin-bottom: 40px;
  }
+ .vtcap p {
+	font: 12pt/1.5 'Verdana';
+}
 #scroll-to-top {
   position: fixed;
   bottom: 20px;
@@ -126,16 +130,13 @@ div.bio {
     grid-template-columns: repeat(4, auto);
     grid-gap : 2em;
     padding : 2em;
-
     place-items : center;
-
     width : 70%;
     height : fit-content;
-
     margin : 0 auto;
-    background-color: #25294a;
-
+    background-color: #252942;
     text-align : center;
+	border: 5px double #ccc;
 }
 
 .grid-item {
