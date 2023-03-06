@@ -55,3 +55,32 @@ function Update_Modal(selected_image_index) {
 
     gallery_image_index = selected_image_index;
 }
+//keyboard input
+function Disable_Modal() {
+    modal.style.display = "none";
+    gallery_image_index = 0;
+    is_modal_active = false;
+}
+
+document.addEventListener('keydown', (event) => { 
+    if(event.repeat == false && is_modal_active == true) {
+        if(event.key == "Escape") { 
+            Disable_Modal();
+        }
+
+        if(event.key == "ArrowRight") {
+            Update_Modal(gallery_image_index+1);
+        }
+        if(event.key == "ArrowLeft") {
+            Update_Modal(gallery_image_index-1);
+        }
+    }
+});
+
+$('#close-button').click(function() {
+    Disable_Modal();
+});
+
+//disabling right clicking on items in the image grid
+$('.grid-item').contextmenu(function() { return false; });
+$('.modal-content').contextmenu(function() { return false; });
